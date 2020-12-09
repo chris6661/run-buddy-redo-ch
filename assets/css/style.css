@@ -321,7 +321,7 @@ body {
 
 .contact-info > * {
   flex: 1;
-  margin: 15px
+  margin: 15px;
 }
 
 .contact-form input, .contact-form textarea {
