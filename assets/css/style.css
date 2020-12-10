@@ -485,3 +485,15 @@ body {
     order: 3;
   }
   }
+
+  .service-grid-container {
+    display: grid;
+  }
+
+  .service-grid-item {
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+    border: solid;
+    color: black;
+  }
