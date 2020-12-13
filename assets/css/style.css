@@ -29,10 +29,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-position: 80%;
-<<<<<<< HEAD
     z-index: 9999;
-=======
->>>>>>> develop
   }
 
   header h1 {
@@ -66,21 +63,12 @@ body {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-<<<<<<< HEAD
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
-  }
-
-  header nav ul li a:hover {
-    background: var(--primary-color);
-    color: var(--secondary-color);
-=======
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
   header nav ul li a:hover {
     background: #fce138;
     color: #024e76;
->>>>>>> develop
     border-radius: 15px;
     text-shadow: none;
   }
@@ -120,11 +108,7 @@ body {
   .hero-cta h2 {
     font-style: italic;
     font-size: 55px;
-<<<<<<< HEAD
-    color: var(--primary-color);
-=======
     color: #fce138;
->>>>>>> develop
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
@@ -134,23 +118,13 @@ body {
   }
 
   .hero-form {
-<<<<<<< HEAD
-    border: 3px solid var(--secondary-color);
-    background-color: rgba(252, 225, 56, .8);
-=======
     border: 3px solid #024e76;
     background-color: rgba(252, 225, 56, 0.8);
->>>>>>> develop
     padding: 20px;
     color: var(--secondary-color);
     width: 40%;
-<<<<<<< HEAD
-    margin: 3.5%; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-=======
     margin: 3.5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
->>>>>>> develop
     border-radius: 15px;
   }
 
@@ -162,10 +136,6 @@ body {
     color: var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
-<<<<<<< HEAD
-    border-radius: 15px;
-    background-color: rgba(255,255,255, .75);
-=======
     border-radius: 10px;
     background-color: rgba(255,255,255, 0.75);
   }
@@ -173,35 +143,12 @@ body {
   .form-input:focus {
     background-color: rgba(255,255,255, 1);
     outline: none;
->>>>>>> develop
   }
 
 .form-input:focus {
   background-color: rgba(255,255,255, 1);
   outline: none;
 }
-
-  .hero-form label {
-    margin: 0 5px;
-  }
-
-  .hero-form p {
-    margin: 5px 0 15px 0;
-  }
-
-  .hero-form button {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-<<<<<<< HEAD
-    border-radius: 15px;
-  }
-
-  .hero-form button:hover {
-    background-color: var(--tertiary-color);  
-  }
 
 .checkbox-wrapper input, .radio-wrapper input {
   opacity: 0;
@@ -219,7 +166,7 @@ body {
   height: 20px;
   width: 20px;
   background: rgba(255, 255, 255, 0.75);  
-  border: 1px solid var(--secondary-color);  
+  border: 1px solid #024e76;  
   position: absolute;
   top: -4px;
   left: -30px;
@@ -234,19 +181,20 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: var(--secondary-color);
+  background: #024e76;
   position: absolute;
   left: -29px;
   top: -3px;
-  background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
+  transform: rotate(-58deg);
+  background-image: radial-gradient(circle, #39a6b2, #024e76);;
 }
 
 .checkbox-wrapper label::after {
   content: "";
   height: 6px;
   width: 14px;
-  border-left: 2px solid var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
+  border-left: 2px solid #024e76;
+  border-bottom: 2px solid #024e76;
   position: absolute;
   left: -26px;
   top: 1px;
@@ -262,14 +210,27 @@ body {
 .radio-wrapper input:checked + label::after {
   content: "";
 }
-=======
+
+  .hero-form label {
+    margin: 0 5px;
+  }
+
+  .hero-form p {
+    margin: 5px 0 15px 0;
+  }
+
+  .hero-form button {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
     border-radius: 10px;
   }
 
   .hero-form button:hover {
     background-color: #39a6b2;  
   }
->>>>>>> develop
 
   .intro p {
     line-height: 1.7;
@@ -289,13 +250,8 @@ body {
   }
   
   .steps img {
-<<<<<<< HEAD
-    width: 100%;
-    margin: 10px 0;
-=======
     flex: 1 12%;
     margin: right 20px;
->>>>>>> develop
   } 
   
   .steps h3 {
@@ -445,13 +401,8 @@ body {
   }
 
   .trainer-bio h3 {
-<<<<<<< HEAD
-    font-size: 28px;
-    color: var(--primary-color);
-=======
     font-size: 30px;
     color: #fce138;
->>>>>>> develop
     font-weight: bold;
     margin: bottom 5px;
     display: none;
@@ -560,22 +511,12 @@ body {
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
-<<<<<<< HEAD
-  border-radius: 15px;
-  background-color: rgba(255, 255,255, .75);
-  outline: none;
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-  background-color: rgba(255,255,255, 1);
-=======
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.75);
 }
 
 .contact-form input, .contact-form textarea:focus {
   background-color: rgba(255, 255, 255, 1);
->>>>>>> develop
   outline: none;
 }
 
@@ -588,21 +529,12 @@ body {
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
-<<<<<<< HEAD
-  border-radius: 15px;
-}
-
-.contact-form button:hover {
-  color: var(--primary-color);
-  background: var(--tertiary-color);
-=======
   border-radius: 10px;
 }
 
 .contact-form button:hover {
   color: #fce138;
   background: #39a6b2;
->>>>>>> develop
 }
 
   footer {
