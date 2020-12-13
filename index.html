@@ -1,771 +1,339 @@
-:root {
-  --primary-color: #fce138;
-  --secondary-color: #024e76;
-  --tertiary-color: #39a6b2;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-body {
-    color: var(--tertiary-color);
-    font-family: Helvetica, Arial, sans-serif;
-  }
-
-  header {
-    padding: 20px 35px;
-    background-color: var(--tertiary-color);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-image: url("../images/hero-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
-    z-index: 9999;
-  }
-
-  header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: var(--primary-color);
-    margin: 0;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  header a {
-    text-decoration: none;
-    color: var(--primary-color);
-  }
-
-  header nav {
-    margin: 7px 0;
-  }
-
-  header nav ul {
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-  }
-
-
-  
-  header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-
-  header nav ul li a:hover {
-    background: #fce138;
-    color: #024e76;
-    border-radius: 15px;
-    text-shadow: none;
-  }
-
-  header h1 {
-    font-weight: bold;
-    font-size: 36px;
-    color: var(--primary-color);
-    margin: 0;
-  }
-
-  section {
-    padding: 60px;
-  }
-
-  .hero {
-    background-image: url("../images/hero-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 80%;
-  }
-
-  .hero-cta {
-    width: 35%;
-    text-align: right;
-    margin: 3.5%;
-    color: #fff;
-    font-size: 18px;
-    line-height: 1.2;
-  }
-
-  .hero-cta h2 {
-    font-style: italic;
-    font-size: 55px;
-    color: #fce138;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-
-  .hero-form h3 {
-    font-size: 24px;
-    margin: 0;
-  }
-
-  .hero-form {
-    border: 3px solid #024e76;
-    background-color: rgba(252, 225, 56, 0.8);
-    padding: 20px;
-    color: var(--secondary-color);
-    width: 40%;
-    margin: 3.5%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-    border-radius: 15px;
-  }
-
-  .form-input {
-    border: 1px solid var(--secondary-color);
-    display: block;
-    padding: 7px 15px;
-    font-size: 16px;
-    color: var(--secondary-color);
-    width: 100%;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    background-color: rgba(255,255,255, 0.75);
-  }
-
-  .form-input:focus {
-    background-color: rgba(255,255,255, 1);
-    outline: none;
-  }
-
-.form-input:focus {
-  background-color: rgba(255,255,255, 1);
-  outline: none;
-}
-
-.checkbox-wrapper input, .radio-wrapper input {
-  opacity: 0;
-}
-
-.checkbox-wrapper label, .radio-wrapper label {
-  position: relative;
-  left: 10px;
-  margin: 10px;
-  line-height: 1.6;
-}
-
-.checkbox-wrapper label::before, .radio-wrapper label::before {
-  content: "";
-  height: 20px;
-  width: 20px;
-  background: rgba(255, 255, 255, 0.75);  
-  border: 1px solid #024e76;  
-  position: absolute;
-  top: -4px;
-  left: -30px;
-}
-
-.radio-wrapper label::before {
-  border-radius: 50%;
-}
-
-.radio-wrapper label::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #024e76;
-  position: absolute;
-  left: -29px;
-  top: -3px;
-  transform: rotate(-58deg);
-  background-image: radial-gradient(circle, #39a6b2, #024e76);;
-}
-
-.checkbox-wrapper label::after {
-  content: "";
-  height: 6px;
-  width: 14px;
-  border-left: 2px solid #024e76;
-  border-bottom: 2px solid #024e76;
-  position: absolute;
-  left: -26px;
-  top: 1px;
-  transform: rotate(-58deg);
-}
-
-.checkbox-wrapper input + label::after, 
-.radio-wrapper input + label::after {
-  content: none;
-}
-
-.checkbox-wrapper input:checked + label::after, 
-.radio-wrapper input:checked + label::after {
-  content: "";
-}
-
-  .hero-form label {
-    margin: 0 5px;
-  }
-
-  .hero-form p {
-    margin: 5px 0 15px 0;
-  }
-
-  .hero-form button {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 10px;
-  }
-
-  .hero-form button:hover {
-    background-color: #39a6b2;  
-  }
-
-  .intro p {
-    line-height: 1.7;
-    color: var(--tertiary-color);
-    width: 80%;
-    font-size: 20px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .steps { 
-    background: var(--primary-color);
-  }
-
-  .steps div {
-    margin-bottom: 80px;
-  }
-  
-  .steps img {
-    flex: 1 12%;
-    margin: right 20px;
-  } 
-  
-  .steps h3 {
-    color: var(--secondary-color);
-    font-size: 46px;
-    margin-top: 10px;
-  }
-  
-  .steps p {
-    color: var(--tertiary-color);
-    font-size: 23px;
-  }
-  
-  .step h3 {
-    color: var(--secondary-color);
-    font-size: 46px;
-    flex: 1 30%;
-  }
-  
-  .step-text p {
-    color: var(--tertiary-color);
-    font-size: 18px;
-  }
-
-  .step-text h4 {
-    font-size: 26px;
-    line-height: 1.5;
-    color: var(--secondary-color);
-  }
-
-  .step {
-    margin: 50px auto;
-    padding-bottom: 50px;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--tertiary-color);
-  }
-
-  .step:last-child {
-    border-bottom: none;
-  }
-
-.step:last-child {
-  border-bottom: none;
-}
-
-  .step-text {
-    flex: 12;
-  }
-
-  .step-info {
-    flex: 2 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .step-img {
-    flex: 1 12%;
-    margin-right: 20px;
-  }
-
-  .step-img img {
-    max-width: 100%;
-  }
-
-  .section-title {
-    font-size: 48px;
-    color: var(--secondary-color);
-    border-bottom: 3px solid;
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
-  }
-  
-  .primary-border {
-    border-color: var(--primary-color);
-  }
-  
-  .secondary-border {
-    border-color: var(--tertiary-color);
-  }
-
-  .trainer {
-    margin: 20px;
-    background: var(--secondary-color);
-    color: var(--primary-color);
-    flex: 1;
-  }
-
-
-.trainers {
-  width: 100%;
-  margin: 0 auto;
-  display: flex; 
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-  .trainer-img {
-    width: 100%;
-    min-height: 300px;
-    display: flex;
-    padding: 15px;
-    align-items: flex-end;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .trainer:hover .trainer-img::after {
-    opacity: 1;
-  }
-
-  .trainer-img::after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-image: linear-gradient(rgba(252, 225, 56, 0.3), rgba(2, 78, 118));
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: 0.5s;
-  }
-
-
-  
-.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
-  top: 0px;
-}
-  .trainer-bio {
-    padding: 25px;
-    line-height: 1.3;
-  }
-
-  .text-left {
-    text-align: left;
-  }
-  
-  .text-right {
-    text-align: right;
-  }
-
-  .trainer-bio h3 {
-    font-size: 30px;
-    color: #fce138;
-    font-weight: bold;
-    margin: bottom 5px;
-    display: none;
-  }
-  
-  .trainer-bio h4 {
-    font-weight: lighter;
-    font-size: 20px;
-    margin-bottom: 15px;
-    display: none;
-  }
-  
-  .trainer-bio p {
-    font-size: 17px;
-  }
-
-  .trainer-1 {
-  background-image: url("../images/trainer-1.jpg")
-  }
-
-  .trainer-2 {
-  background-image: url("../images/trainer-2.jpg")
-}
-
-  .trainer-3 {
-  background-image: url("../images/trainer-3.jpg")
-}
-
-.trainer-img h3 {
-  position: relative;
-  z-index: 1;
-  font-size: 28px;
-  margin-bottom: 5px;
-  top: 200px;
-  transition: 0.6s;
-}
-
-.trainer-img h4 {
-  position: relative;
-  z-index: 1;
-  font-size: 22px;
-  top: 200px;
-  transition: 0.6s;
-  transition-delay: .2s;
-}
-
-.reach-out {
-    font-size: 55px;
-    border-bottom: 3px solid;
-    padding-bottom: 20px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 50%;
-    border-color: var(--tertiary-color);
-}
-
-  .contact {
-    background: var(--secondary-color);
-  }
-
-  .contact h2 {
-    color: var(--primary-color);
-  }
-
-  .contact-info iframe {
-    height: 400px;
-  }
-
-  .contact-info div {
-    color: white;
-  }
-
-  .contact-info h3 {
-    color: var(--primary-color);
-    font-size: 32px;
-  }
-  
-  .contact-info p, .contact-info address {
-    margin: 20px 0;
-    line-height: 1.5;
-    font-size: 16px;
-    font-style: normal;
-  }
-  
-  .contact-info a {
-    color: var(--primary-color);
-  }
-
-.contact-info {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contact-info > * {
-  flex: 1;
-  margin: 15px;
-}
-
-.contact-form input, .contact-form textarea {
-  border: 1px solid var(--secondary-color);
-  display: block;
-  padding: 7px 15px;
-  font-size: 16px;
-  color: var(--secondary-color);
-  width: 100%;
-  margin-bottom: 15px;
-  margin-top: 5px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.75);
-}
-
-.contact-form input, .contact-form textarea:focus {
-  background-color: rgba(255, 255, 255, 1);
-  outline: none;
-}
-
-
-.contact-form button {
-  width: 100%;
-  border: none;
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  text-align: center;
-  padding: 15px 0;
-  font-size: 16px;
-  border-radius: 10px;
-}
-
-.contact-form button:hover {
-  color: #fce138;
-  background: #39a6b2;
-}
-
-  footer {
-    background: var(--primary-color);
-    width: 100%;
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  footer h2 {
-    color: var(--secondary-color);
-    font-size: 30px;
-    margin: 0;
-  }
-
-  footer div {
-    line-height: 1.5;
-    text-align: right;
-  }
-
-  footer a {
-    color: var(--secondary-color);
-  }
-
-.flex-row {
-  display: flex;
-}
-
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
-  header {
-    padding-bottom: 0;
-    justify-content: center;
-    position: relative;
-  }
-
-  header h1 {
-    width: 100%;
-    text-align: center;
-  }
-
-  header nav ul {
-    margin-top: 20px;
-    width: 100%;
-    justify-content: center;
-  }
-
-  header nav ul li a {
-    font-size: 20px;
-  }
-
-  footer h2, footer div {
-    text-align: center;
-    width: 100%;
-  }
-  .hero-cta, .hero-form {
-    width: 100%;
-  }
-  
-  .hero-cta {
-    text-align: center;
-  }
-
-  .section-title {
-    width: 80%;
-  }
-  
-  .trainer {
-    flex: 0 70%;
-  }
-  
-  .contact-info iframe {
-    flex: 1 100%;
-  }
-}
-
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
-  section {
-    padding: 30px 15px;
-  }
-
-  .step h3 {
-    flex: 1 100%;
-    text-align: center;
-  }
-
-  .step-info {
-    flex: 2 100%;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .step-img {
-    flex: 0 32%;
-    margin-right: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  .step-text {
-    flex: 100%;  
-  }
-
-  .service-grid-container {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .service-grid-item.basic {
-    grid-column: 1;
-  }
-
-  .service-grid-item.both {
-    grid-column: 1 / -1;
-  }
-
-  .service-grid-item.cancel {
-    transform: none;
-    writing-mode: unset;
-    grid-column: 1 / -1;
-    grid-row: -1;
-  }
-
-  .trainer-img h3, .trainer-img h4, .trainer-img::after {
-    display: none;
-  }
-
-  .trainer-bio h3, .trainer-bio h4 {
-    display: block;
-  }
-
-}
-  
-
-
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
-  .hero-form button {
-    width: 100%;
-  }
-
-  .section-title {
-    width: 95%;
-  }
-
-  .intro p {
-    width: 100%;
-  }
-
-  .trainer {
-    flex: 0 100%;
-  }
-
-  .contact-info {
-    text-align: center;
-  }
-
-  .contact-info > * {
-    flex: 0 100%;
-  }
-  
-  .contact-form {
-    order: 3;
-  }
-  }
-
-  .services {
-    background: var(--primary-color);
-  }
-
-.service-grid-wrapper {
-  display: flex; 
-  width: 100%;
-  justify-content: center;
-}
-
-  .service-grid-container {
-    display: grid;
-    grid-template-columns: 1fr repeat(2, 4fr);
-    grid-template-rows: repeat(5, 1fr) 2fr;
-    background: lightyellow;
-    width: 80%;
-    border: 2px solid var(--secondary-color);
-    color: var(--secondary-color);
-    font-size: 1.2rem;
-  }
-
-  .service-grid-item {
-    padding: 15px 0;
-    border: 2px solid var(--secondary-color);
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    text-align: center;  }
-
-  .service-grid-item.basic {
-    grid-column: 2 /span 1;
-  }
-
-  .service-grid-item.both {
-    grid-column: 2 /span 2;
-  }
-
-  .service-grid-item.cancel {
-    writing-mode: vertical-lr;
-    grid-column: 1;
-    grid-row: 1 / -1;
-    transform: rotate(180deg);
-  }
-
-  .grid-head, .grid-price, .service-grid-item.cancel {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-
-  @media screen and (max-width: 768px) {
-    .service-grid-container {
-      grid-template-columns: 1fr 1fr;
-    }
-    .service-grid-item.basic {
-      grid-column: 1;
-    }
-    .service-grid-item.both {
-      grid-column: 1/-1;
-    }
-    .service-grid-item.cancel {
-      transform: none;
-      writing-mode: unset;
-      grid-column: 1/-1;
-      grid-row: -1;
-    }
-  }
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <meta charset= "UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Run Buddy</title>
+    
+
+    </head>
+    <body>
+    <!-- navigation-->
+    <header>
+        <h1>
+            <a href="/">RUN BUDDY</a>
+        </h1>
+        <nav>
+            
+
+          
+            <ul>
+                <li>
+                    <a href="#what-we-do">What We Do</a>
+                </li>
+                <li>
+                    <a href="#what-you-do">What You Do</a>
+                </li>
+                <li>
+                    <a href="#your-trainers">Your Trainers</a>
+                </li>
+                <li>
+                  <a href="#service-plans">Service Plans</a>
+                </li>
+                <li>
+                    <a href="#reach-out">Reach Out</a>
+                </li>    
+                  
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+
+      <div class="hero-cta">
+        <h2>Start Building Habits.</h2>
+        <p>
+          seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa you probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.
+        </p>
+      </div>
+
+        <div class="hero-form">      
+          <h3>Get Started Today</h3>
+          <p>Fill out this form and one of our trainers will schedule a consult</p>
+    
+          <form>
+            <label for="name">Enter full name:</label>
+            <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
+            <label for="email">Enter email address:</label>
+            <input type="text" placeholder="Email Address" name="email" id="email" class="form-input"/>
+            <label for="phone">Enter a telephone number:</label>
+            <input type="text" placeholder="Phone Number" name="phone" id="phone" class="form-input"/>
+            <p>
+              Have you worked out with a trainer before?
+              <span class="radio-wrapper">
+                <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                <label for="trainer-yes">Yes</label>
+              </span>
+              <span class="radio-wrapper">
+                <input type="radio" name="trainer-confirm" id="trainer-no" />
+                <label for="trainer-no">No</label>
+              </span>
+            </p>
+            <p>
+              <span class="checkbox-wrapper">
+                <input type="checkbox" name="age-confirm" id="checkbox" />
+                <label for="checkbox">I acknowledge that I am at least 18 years of age.</label>
+              </span>
+            </p>
+            
+              <button type="submit">
+                Get running!
+              </button>
+          </form>
+        </div>
+      </section>
+
+    
+
+   
+    <section id="what-we-do" class="intro">
+      <div class="flex-row">
+        <h2 class="section-title primary-border">What We Do
+        </h2>
+      </div>
+      <div class="flex-row">  
+      <p>
+          butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
+        </p>
+        </div>
+      </section>
+      
+      <!-- "what you do" section -->
+      <section id="what-you-do" class="steps">
+        <div class="flex-row">
+        <h2 class="section-title secondary-border">What You Do</h2> 
+        </div>
+        <div class="step">
+          <h3>Step 1.</h3>
+          <div class="step-info">
+            <div class="step-img">
+              <img src="./assets/images/step-1.svg" alt="" />
+            </div>
+            <div class="step-text">
+              <h4>Fill Out The Form Above</h4>
+              <p>You're already here, so why not?</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="step">
+          <h3>Step 2.</h3>
+          <div class="step-info">
+            <div class="step-img">
+              <img src="./assets/images/step-2.svg" alt="" />
+            </div>
+            <div class="step-text">
+              <h4>Consult with One of Our Trainers</h4>
+              <p>Are you here to build muscle, lose weight, or just feel good?</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="step">
+          <h3>Step 3.</h3>
+          <div class="step-info">
+            <div class="step-img">
+              <img src="./assets/images/step-3.svg" alt="" />
+            </div>
+            <div class="step-text">
+              <h4>Get Running.</h4>
+              <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="step">
+          <h3>Step 4.</h3>
+          <div class="step-info">
+            <div class="step-img">
+              <img src="./assets/images/step-4.svg" alt="" />
+            </div>
+            <div class="step-text">
+              <h4>See Results.</h4>
+              <p>Bi-weekly checkins with your trainer will keep you focuse.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- "meet the trainers" section-->
+    <section id="your-trainers">
+      <div class="flex-row">
+        <h2 class="section-title primary-border">
+            Meet The Trainers
+        </h2>
+        </div>
+        <div class="trainers">
+        <article class="trainer">
+  <div class="trainer-img trainer-1">
+    <div>
+      <h3>Arron Stephens</h3>
+      <h4>Speed / Strength</h4>
+    </div>
+  </div>
+  <div class="trainer-bio">
+    <h3>Arron Stephens</h3>
+    <h4>Speed / Strength</h4>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+    </p>
+  </div>
+</article>
+        
+       
+<article class="trainer">
+  <div class="trainer-img trainer-2">
+    <div>
+      <h3>Joanna Gill</h3>
+      <h4>Endurance</h4>
+    </div>
+  </div>
+  <div class="trainer-bio">
+    <h3>Joanna Gill</h3>
+      <h4>Endurance</h4>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+    </p>
+  </div>
+</article>
+        
+      
+<article class="trainer">
+  <div class="trainer-img trainer-3">
+    <div>
+      <h3>Harry "the Headband" Smith</h3>
+      <h4>Strength</h4>
+    </div>
+  </div>
+  <div class="trainer-bio">
+    <h3>Harry "the Headband" Smith</h3>
+      <h4>Strength</h4>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+    </p>
+  </div>
+</article>
+        
+    </section>
+
+    <section id="service-plans" class="services">
+
+      <h2 class="section-title secondary-border">
+        Our Service Plans
+      </h2>
+    
+      <div class="service-grid-wrapper">
+        <div class="service-grid-container">
+          
+          <div class="service-grid-item grid-head basic">
+            Basic
+          </div>
+          <div class="service-grid-item grid-head premium">
+            Premium
+          </div>
+          
+          <!-- Body -->
+          <div class="service-grid-item basic">
+            Support Offered Between 9-5
+          </div>
+          
+          <div class="service-grid-item premium">
+            24/7 Plan Support
+          </div>
+          
+          <div class="service-grid-item basic">
+            Bi-Weekly Trainer Calls
+          </div>
+          
+          <div class="service-grid-item premium">
+            Weekly Trainer Calls
+          </div>
+          
+          <div class="service-grid-item basic">
+            N/A
+          </div>
+          
+          <div class="service-grid-item premium">
+            Discounts At Select Running Stores
+          </div>
+          
+          <div class="service-grid-item both">
+            Subscription to Run Buddy's Health Magazine!
+          </div>
+          
+          <div class="service-grid-item grid-price basic">
+            $10/mo
+          </div>
+          
+          <div class="service-grid-item grid-price premium">
+            $25/mo
+          </div>
+          
+          <div class="service-grid-item cancel">
+            Cancel At Any Time!
+          </div>
+
+        </div> <!-- div service-grid-container -->
+      </div> <!-- div service-grid-wrapper -->
+
+    </section>
+
+    <!-- "reach out" section-->
+    <section id="reach-out" class="contact">
+      <h2 class="reach-out">Reach Out</h2>
+          <div class="contact-info">
+            <div>
+              <h3>Run Buddy</h3>
+              <p>
+                Any questions or concerns before signing up?
+                <br />
+                Let us know and we'll be happy to talk to you!
+              </p>
+          
+              <address>
+                55 Main Street <br />
+                Some Town, Ca <br />
+                12345 <br />
+                P: <a href="tel:555.786.2839">555.RUN.BUDZ (555.786.2839)</a><br />
+                E: <a href="mailto://info@runbuddy.io">info@runbuddy.io</a>
+              </address>
+          
+            </div>
+          
+            <div class="contact-form">
+              <h3>Contact Us</h3>
+              <form>
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" placeholder="Your Name" />
+          
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" placeholder="Message"></textarea>
+          
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3449.68517620588!2d-97.79980328469954!3d30.160415681840334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b4cd84964ec27%3A0xd18a78c21184f246!2s10001%20S%201st%20St%2C%20Austin%2C%20TX%2078748!5e0!3m2!1sen!2sus!4v1607376834014!5m2!1sen!2sus" width="600" height="450"
+            frameborder="0" 
+            height="400"
+            width="400"
+            style="border:0;" 
+            allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+          
+          </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <h2>❤️ Made with love by Run Buddy</h2>
+        <div>
+            <a href="./privacy-policy.html#">Read Our Privacy Policy</a><br />
+            &copy; 2019 Run Buddy, Inc.
+          </div>
+    </footer>
+    
+    </body>
+</html>
